@@ -1,0 +1,9 @@
+{
+  "name": "PocketPal",
+  "displayName": "PocketPal",
+  "extra": {
+    "eas": {
+      "projectId": "560f167f-374a-46be-a50d-380a2a9ce5fc"
+    }
+  }
+}
