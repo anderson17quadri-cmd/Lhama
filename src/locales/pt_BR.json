@@ -924,7 +924,8 @@
         "benchmark": "Benchmark",
         "settings": "Configurações",
         "appInfo": "Sobre o App",
-        "testCompletion": "Testar Completação"
+        "testCompletion": "Testar Completação",
+        "jarvis": "Jarvis"
       },
       "deleteChatTitle": "Excluir Chat",
       "deleteChatMessage": "Tem certeza de que deseja excluir este chat?",
@@ -1125,7 +1126,8 @@
     "benchmark": "Benchmark",
     "settings": "Configurações",
     "appInfo": "Sobre o App",
-    "testCompletion": "Testar Completação"
+    "testCompletion": "Testar Completação",
+    "jarvis": "Jarvis"
   },
   "chat": {
     "conversationReset": "Conversa reiniciada!",
@@ -1518,5 +1520,24 @@
     "titleByPal": "{{name}} está sendo baixado",
     "titleByModel": "{{name}} está sendo baixado",
     "extraInProgress": "+{{count}} mais em andamento"
+  },
+  "jarvis": {
+    "configTitle": "Servidor Jarvis",
+    "configDescription": "Conecte ao servidor local do seu projeto Jarvis (SEXTA-FEIRA), separado deste app, para puxar dados para cá. Ele roda no seu computador num endereço local tipo http://192.168.1.100:7777.",
+    "serverUrlLabel": "Endereço do servidor",
+    "serverUrlPlaceholder": "http://192.168.1.100:7777",
+    "tokenLabel": "X-Jarvis-Token",
+    "tokenPlaceholder": "Token mostrado quando o servidor inicia",
+    "savedTitle": "Salvo",
+    "savedDescription": "Configurações do servidor Jarvis salvas.",
+    "dataTitle": "Puxar dados",
+    "dataDescription": "Busca dados do servidor Jarvis e depois copia para colar num chat.",
+    "fetchInfoButton": "Info do servidor",
+    "fetchLogButton": "Log de comandos",
+    "copyButton": "Copiar",
+    "copiedTitle": "Copiado",
+    "copiedDescription": "Dados copiados. Cole numa mensagem do chat.",
+    "pasteHint": "Vá até um chat e cole para discutir esses dados com o modelo.",
+    "notConfigured": "Configure o endereço do servidor Jarvis primeiro."
   }
 }
