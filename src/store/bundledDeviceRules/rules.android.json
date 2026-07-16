@@ -445,6 +445,14 @@
      "size_bytes": 4921258368
     },
     {
+     "model": "dolphin-2.9.3-mistral-nemo-12b",
+     "display_name": "Dolphin 2.9.3 Mistral-Nemo 12B (mais potente, mais lento)",
+     "hf_repo": "dphn/dolphin-2.9.3-mistral-nemo-12b-gguf",
+     "hf_filename": "dolphin-2.9.3-mistral-nemo-12b.Q4_K_M.gguf",
+     "params": 12247802880,
+     "size_bytes": 7477218752
+    },
+    {
      "model": "gemma-3-4b",
      "display_name": "Gemma 3 4B",
      "hf_repo": "unsloth/gemma-3-4b-it-GGUF",
