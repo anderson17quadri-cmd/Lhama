@@ -13,6 +13,7 @@ import {Menu, RenameModal, Checkbox} from '..';
 import {
   BenchmarkIcon,
   ChatIcon,
+  CpuChipIcon,
   EditIcon,
   ModelIcon,
   PalIcon,
@@ -516,6 +517,13 @@ export const SidebarContent: React.FC<DrawerContentComponentProps> = observer(
               onPress={() => props.navigation.navigate(ROUTES.BENCHMARK)}
               style={styles.menuDrawerItem}
               testID="drawer-item-benchmark"
+            />
+            <Drawer.Item
+              label={l10n.components.sidebarContent.menuItems.jarvis}
+              icon={() => <CpuChipIcon stroke={theme.colors.primary} />}
+              onPress={() => props.navigation.navigate(ROUTES.JARVIS)}
+              style={styles.menuDrawerItem}
+              testID="drawer-item-jarvis"
             />
             <Drawer.Item
               label={l10n.components.sidebarContent.menuItems.settings}
