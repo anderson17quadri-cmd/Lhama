@@ -38,8 +38,8 @@ export class UIStore {
   colorScheme: 'light' | 'dark' =
     Appearance.getColorScheme() === 'dark' ? 'dark' : 'light';
 
-  // Current selected language (default to English)
-  _language: AvailableLanguage = 'en';
+  // Current selected language (default to Portuguese)
+  _language: AvailableLanguage = 'pt_BR';
 
   // List of supported languages (derived from locales registry)
   get supportedLanguages(): readonly AvailableLanguage[] {
@@ -251,14 +251,6 @@ export class UIStore {
       if (!this.dismissedDownloadIds.includes(modelId)) {
         this.dismissedDownloadIds.push(modelId);
       }
-    });
-  }
-
-  clearDownloadBannerDismissal(modelId: string) {
-    runInAction(() => {
-      this.dismissedDownloadIds = this.dismissedDownloadIds.filter(
-        id => id !== modelId,
-      );
     });
   }
 }
