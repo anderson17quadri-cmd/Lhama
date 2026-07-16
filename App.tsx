@@ -41,6 +41,7 @@ import {
   SettingsScreen,
   BenchmarkScreen,
   AboutScreen,
+  JarvisScreen,
 
   // Dev tools screen. Only available in debug mode.
   DevToolsScreen,
@@ -158,6 +159,14 @@ const App = observer(() => {
                             options={{
                               headerStyle: styles.headerWithoutDivider,
                               title: currentL10n.screenTitles.benchmark,
+                            }}
+                          />
+                          <Drawer.Screen
+                            name={ROUTES.JARVIS}
+                            component={gestureHandlerRootHOC(JarvisScreen)}
+                            options={{
+                              headerStyle: styles.headerWithoutDivider,
+                              title: currentL10n.screenTitles.jarvis,
                             }}
                           />
                           <Drawer.Screen
