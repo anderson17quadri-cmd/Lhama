@@ -90,12 +90,19 @@ jobs:
             -keypass dummy-ci-password \
             -dname "CN=CI Build, OU=CI, O=LocalAI, L=CI, S=CI, C=US"
 
+      - name: Free up disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost "$AGENT_TOOLSDIRECTORY" /opt/hostedtoolcache/CodeQL || true
+          df -h /
+
       - name: Build Android Release
         working-directory: android
         env:
           APP_RELEASE_STORE_PASSWORD: dummy-ci-password
           APP_RELEASE_KEY_PASSWORD: dummy-ci-password
-        run: ./gradlew assembleProdRelease --no-daemon
+        run: |
+          df -h /
+          ./gradlew assembleProdRelease --no-daemon --stacktrace
 
       - name: Upload Android APK
         uses: actions/upload-artifact@v4
